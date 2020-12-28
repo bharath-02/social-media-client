@@ -1,0 +1,35 @@
+.page-title {
+    display: block !important;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.form-container {
+    width: 400px;
+    margin: auto;
+}
+
+.post-container {
+    display: block !important;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.ui.teal.button:focus,
+.ui.teal.buttons .button:focus {
+    background-color: #00b5ad;
+}
+
+.postDeleteButton {
+    margin-top: -35px !important;
+}
+
+.commentDeleteButton {
+    margin-top: -0 !important;
+}
+
+.singlePostCard {
+    width: 100% !important;
+}
