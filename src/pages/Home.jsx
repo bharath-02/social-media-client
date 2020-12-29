@@ -12,7 +12,7 @@ function Home() {
     const { loading, data: { getPosts: posts } = {} } = useQuery(FETCH_POSTS_QUERY);
     
     return (
-        <Grid doubling columns={window.innerWidth>550 ? 'three' : 'zero' }>
+        <Grid doubling columns={3}>
             <Grid.Row className="post-container">
                 {user && (
                     <Grid.Column>
@@ -20,7 +20,7 @@ function Home() {
                     </Grid.Column>
                 )}
             </Grid.Row>
-            <Grid.Row className="page-title">
+            <Grid.Row className="page-title" style={{ marginTop: 20 }}>
                 <h1>Recent Posts</h1>
             </Grid.Row>
             <Grid.Row>

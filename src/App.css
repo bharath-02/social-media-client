@@ -2,7 +2,7 @@
     display: block !important;
     text-align: center;
     font-size: 2rem;
-    margin-top: 10px;
+    margin-top: 100px !important;
 }
 
 .form-container {
@@ -11,6 +11,7 @@
 }
 
 .post-container {
+    /* width: 100% !important; */
     display: block !important;
     text-align: center;
     font-size: 2rem;
@@ -32,4 +33,21 @@
 
 .singlePostCard {
     width: 100% !important;
+}
+
+@media screen and (max-width: 400px) {
+    .postColumns {
+        width: 275px !important;
+        display: block !important;
+        padding: 15px !important;
+        margin: 0 auto !important;
+    }
+    .extraContent {
+        display: flex;
+        flex-direction: column;
+    }
+    .singleImage {
+        width: 100px !important;
+        height: 100px !important;
+    }
 }

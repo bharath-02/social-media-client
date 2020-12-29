@@ -13,7 +13,7 @@ export default function PostCard(props) {
     const { body, createdAt, id, username, likeCount, commentCount, likes } = props.post;
 
     return (
-        <Card fluid>
+        <Card fluid className="postColumns">
             <Card.Content as={Link} to={`/posts/${id}`}>
                 <Image
                 floated='right'
@@ -24,7 +24,7 @@ export default function PostCard(props) {
                 <Card.Meta>{moment(createdAt).fromNow()}</Card.Meta>
                 <Card.Description>{body}</Card.Description>
             </Card.Content>
-            <Card.Content extra>
+            <Card.Content extra className="extraContent">
                 <LikeButton user={user} post={{ id, likes, likeCount }}  />
                 <Popup 
                     content="Comment on post"
