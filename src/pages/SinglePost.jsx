@@ -48,7 +48,7 @@ function SinglePost(props) {
         postMarkup = (
             <Grid>
                 <Grid.Row>
-                    <Grid.Column width={5}>
+                    <Grid.Column width={window.innerWidth<500 ? '6' : '3'}>
                         <Image
                             src='https://react.semantic-ui.com/images/avatar/large/molly.png'
                             size="small"
@@ -56,7 +56,7 @@ function SinglePost(props) {
                             className="singleImage"
                         />
                     </Grid.Column>
-                    <Grid.Column width={11}>
+                    <Grid.Column width={window.innerWidth<500 ? '10' : '10'}>
                         <Card className="singlePostCard">
                             <Card.Content>
                                 <Card.Header>{username}</Card.Header>
@@ -80,7 +80,7 @@ function SinglePost(props) {
                             </Card.Content>
                         </Card>
                     </Grid.Column>
-                    <Grid.Column width={16} style={{ marginTop: 20 }}>
+                    <Grid.Column width={window.innerWidth<500 ? '16' : '13'} style={{ marginTop: 20 }}>
                         {user && (
                             <Card fluid>
                                 <Card.Content>
