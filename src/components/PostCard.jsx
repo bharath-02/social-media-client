@@ -27,7 +27,7 @@ export default function PostCard(props) {
             <Card.Content extra className="extraContent">
                 <LikeButton user={user} post={{ id, likes, likeCount }}  />
                 <Popup 
-                    content="Comment on post"
+                    content="Comment"
                     inverted
                     trigger={
                         <Button labelPosition='right' as={Link} to={`/Posts/${id}`}>
