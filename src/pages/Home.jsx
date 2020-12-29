@@ -12,7 +12,7 @@ function Home() {
     const { loading, data: { getPosts: posts } = {} } = useQuery(FETCH_POSTS_QUERY);
     
     return (
-        <Grid columns={3}>
+        <Grid doubling columns={window.innerWidth>550 ? 'three' : 'zero' }>
             <Grid.Row className="post-container">
                 {user && (
                     <Grid.Column>
@@ -25,7 +25,7 @@ function Home() {
             </Grid.Row>
             <Grid.Row>
                 {loading ? (
-                    <h1>Loading Posts..</h1>
+                    <h1>Loading Posts...</h1>
                 ) : (
                     <Transition.Group duration={1000}>
                         {posts && posts.map(post => (
